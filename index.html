@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Document</title>
+    <script src="asset/js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="calculatrice">
+      <div class="containDisplay">
+        <p class="ajouterOperation"></p>
+        <p class="afficherResulta"></p>
+      </div>
+      <div class="touches">
+        <button class="operation" onclick="effacer()">C</button>
+        <button class="operation" onclick="ajouterOperation('/')">/</button>
+        <button class="operation" onclick="ajouterOperation('*')">*</button>
+        <button class="operation">
+          <img src="asset/img/erase (1).svg" alt="erase" />
+        </button>
+        <button class="chiffre" onclick="ajouterChiffre(7)">7</button>
+        <button class="chiffre" onclick="ajouterChiffre(8)">8</button>
+        <button class="chiffre" onclick="ajouterChiffre(9)">9</button>
+        <button class="operation" onclick="ajouterOperation('-')">-</button>
+        <button class="chiffre" onclick="ajouterChiffre(4)">4</button>
+        <button class="chiffre" onclick="ajouterChiffre(5)">5</button>
+        <button class="chiffre" onclick="ajouterChiffre(6)">6</button>
+        <button class="operation" onclick="ajouterOperation('+')">+</button>
+        <button class="chiffre" onclick="ajouterChiffre(1)">1</button>
+        <button class="chiffre" onclick="ajouterChiffre(2)">2</button>
+        <button class="chiffre" onclick="ajouterChiffre(3)">3</button>
+        <button class="operation" onclick="ajouterChiffre('.')">.</button>
+        <button class="chiffre" onclick="ajouterChiffre(0)">0</button>
+        <button class="operation border" onclick="calculer()">=</button>
+      </div>
+    </div>
+  </body>
+</html>

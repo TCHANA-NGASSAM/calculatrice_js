@@ -1,54 +1,86 @@
 body {
-  display: flex;
+  background-color: #93a3f3;
+  margin: 0;
+  padding: 0;
+}
 
-  justify-content: center;
-  background-color: #babed3;
-  }
-  
-  .calculatrice {
-    margin-top: 5%;
-    background-color:#F6F7FC;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  .containDisplay{
-    height: 250px;
-  }
-  .touches{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    height: 400px;
-    width: 100%;
-  }
-  button {
+.calculatrice {
+  margin-left: 40%;
  
-    padding-left: 17px;
-    padding-right: 17px;
-    font-size: 25px;
-    border-radius: 17%;
-    border: none;
-    text-align: center;
-    height: 60px;
-    font-family: cursive;
-    color:#505050;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 3px 0px rgb(0, 0, 0);
-  }
- 
-p{
+  width: 250px;
+  margin-top: 5%;
+  background-color: #f6f7fc;
+  padding: 20px;
+  border-radius: 10px;
+}
+.containDisplay {
+  height: 100px;
+}
+.touches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  height: 400px;
+}
+button {
+  padding-left: 17px;
+  padding-right: 17px;
+  font-size: 25px;
+  border-radius: 17%;
+  border: none;
+  text-align: center;
+  height: 60px;
+  font-family: cursive;
+  color: #505050;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 3px 0px rgb(0, 0, 0);
+}
+button:active{
+  background-color: #e3dcdc;
+}
+#afficherResultat {
+  /* margin-top: 34%; */
+  padding: 9px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  text-align: end;
+  background-color: #f6f7fc;
+}
+#afficherOperation {
+  background-color: #f6f7fc;
+   margin-top: 0%; 
+  margin-left: px;
+  padding: 9px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  text-align: end;
+}
+p {
   color: rgb(0, 0, 0);
 }
-  .operation{
-    background-color: #93A3F3;
-  }
+.operation {
+  background-color: #93a3f3;
+}
+.operation:active{
+  background-color: #7c88c3;
+}
 
-  @media screen and (max-width:767px){
-    body{
-      background-color:#F6F7FC;
-    }
-    button {
-      margin: 0;
-    }
+@media screen and (max-width: 767px) {
+  body{
+    background-color: #f6f7fc;
   }
-  
+  .calculatrice{
+    margin-left: 0%;
+    margin-top: 50%;
+    width: 90%;
+    border-radius: 0;
+  }
+  button{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80px;
+    font-size: 30px;
+  }
+}

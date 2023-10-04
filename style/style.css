@@ -70,6 +70,8 @@ p {
 @media screen and (max-width: 767px) {
   body{
     background-color: #f6f7fc;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
   .calculatrice{
     margin-left: 0%;

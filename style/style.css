@@ -6,8 +6,8 @@ body {
   }
   
   .calculatrice {
-    margin-top: 10%;
-    background-color:#F6F7FC;
+    margin-top: 5%;
+    background-color:#0025dd;
     padding: 20px;
     border-radius: 10px;
   }
@@ -35,7 +35,9 @@ body {
     background-color: #FFFFFF;
   }
  
-
+p{
+  color: rgb(0, 0, 0);
+}
   .operation{
     background-color: #93A3F3;
   }

@@ -10,14 +10,13 @@
   <body>
     <div class="calculatrice">
       <div class="containDisplay">
-        <p class="ajouterOperation"></p>
-        <p class="afficherResulta"></p>
+        <p id="afficherResultat"></p>
       </div>
       <div class="touches">
-        <button class="operation" onclick="effacer()">C</button>
+        <button class="operation" onclick="effacerTout()">C</button>
         <button class="operation" onclick="ajouterOperation('/')">/</button>
         <button class="operation" onclick="ajouterOperation('*')">*</button>
-        <button class="operation">
+        <button class="operation" onclick="effacerUnElement()">
           <img src="asset/img/erase (1).svg" alt="erase" />
         </button>
         <button class="chiffre" onclick="ajouterChiffre(7)">7</button>
@@ -35,6 +34,6 @@
         <button class="chiffre" onclick="ajouterChiffre(0)">0</button>
         <button class="operation border" onclick="calculer()">=</button>
       </div>
-    </div>
+    </div> <br>
   </body>
 </html>

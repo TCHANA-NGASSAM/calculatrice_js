@@ -1,22 +1,36 @@
-let affichage = document.getElementById("affichage");
+
+
+let afficherResultat = document.getElementById("afficherResultat")
 
 function ajouterChiffre(chiffre) {
-  affichage.value += chiffre;
+  afficherResultat.textContent += chiffre
 }
 
-function ajouterOperation(operation) {
-  affichage.value += operation;
+ function ajouterOperation(operation) {
+  afficherResultat.textContent  += operation;
 }
+
+ function effacerTout() {
+  
+  if (afficherResultat !== ''){
+    afficherResultat.textContent= ""
+  }else{
+    afficherResultat.textContent= 'ADRIEN CALCULATRICE'
+  }
+ }
+
+ function effacerUnElement(){
+  let affichage = afficherResultat.textContent
+  let nouvelleAffichage = affichage.slice(0,-1)
+  afficherResultat.textContent = nouvelleAffichage
+ }
 
 function calculer() {
-  try {
-    var resultat = eval(affichage.value);
-    affichage.value = resultat;
-  } catch (error) {
-    affichage.value = "Erreur";
+  if (afficherResultat) {
+    let resultat = eval(afficherResultat.textContent);
+     afficherResultat.textContent  = resultat;
+  } else{
+     afficherResultat.textContent  = "Erreur";
   }
 }
 
-function effacer() {
-  affichage.value = "";
-}
